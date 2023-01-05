@@ -20,25 +20,30 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   background-image: linear-gradient(to top, var(--Very-pale-blue), var(--Pale-blue));
-  background-repeat: no-repeat;
-  height: 100vh;
+  /*Se aplica mejor el gradiente*/
+  background-size: contain;
+  background-repeat: no-repeat ;
+  /*Define mejor el ancho*/
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .container {
-  width: 375px;
-  margin: 20px;
+  /*Para responsivo max-width*/
+  max-width: 23.438rem;
+  margin: 1.25rem;
 }
 .container__box {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   width: 95%;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 .container__box__img-hero {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .container__box__texts {
   display: flex;
@@ -48,12 +53,12 @@ body {
 }
 .container__box__title {
   align-items: center;
-  font-size: 25px;
+  font-size: 1.563rem;
   font-weight: 900;
   margin-bottom: 5%;
 }
 .container__box__paragraph {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--Desaturated-blue);
 }
 .container__box__bg {
@@ -65,7 +70,7 @@ body {
   justify-content: space-around;
   background: var(--Very-pale-blue);
   padding: 5%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .container__box__details-icon {
   margin-right: 5%;
@@ -91,7 +96,7 @@ body {
 .container__box__details-change:hover{
   color: var(--Desaturated-blue-2);
   font-weight: 700;
-  text-decoration: 0;
+  text-decoration: none;
 }
 .container__box__buttons {
   display: flex;
@@ -102,7 +107,7 @@ body {
   margin-top: 5%;
   width: 95%;
   padding: 5%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--Bright-blue);
   font-weight: 900;
@@ -124,7 +129,7 @@ body {
 }
 /*Footer*/
 .attribution {
-  font-size: 11px;
+  font-size: 0.688rem;
   justify-content: center;
   align-self: center;
 }
@@ -137,10 +142,5 @@ body {
  
   .container__box{
     width: 100%;
-  }
-  .attribution {
-    font-size: 11px;
-    justify-content: center;
-    align-self: flex-end;
   }
 }
